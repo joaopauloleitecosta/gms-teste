@@ -5,17 +5,6 @@ describe('Realizando testes no Golden Movie Studio', () => {
     cy.visit('/')
   })
 
-  it('Limpar Busca de filmes', () => {
-    cy.get('#clear-button').click()
-    cy.get('#search-input').should('contain', '')
-  })
-
-  it('Busca de filmes com palavra-chave inválida', () => {
-    cy.get('#search-input').type('Semana EBAC QA')
-    cy.get('#search-button').click()
-    cy.get('#results-section > p').should('contain', 'Filme não encontrado')
-  })
-
   it('Deve fazer o cadastro de campos obrigatórios', () => {
     var email = `joao${Date.now()}@teste.com`
     cy.preencherCadastro('João', 'Paulo', email, '84991567321', 'Joao@123456')
