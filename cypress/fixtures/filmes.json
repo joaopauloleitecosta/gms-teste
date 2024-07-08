@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Matrix",
+        "ano": 2006,
+        "descricao": "Um filme qualquer"
+    },
+    {
+        "titulo": "Inception",
+        "ano": 2000,
+        "descricao": "Um filme qualquer"
+    },
+    {
+        "titulo": "The Lord of the Rings",
+        "ano": 2003,
+        "descricao": "Um filme qualquer"
+    },
+    {
+        "titulo": "Batman",
+        "ano": 2023,
+        "descricao": "Um filme qualquer"
+    }
+]
