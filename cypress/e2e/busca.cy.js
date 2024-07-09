@@ -10,7 +10,7 @@ describe('US-001-Funcionalidade: Busca de Filmes', () => {
     })
 
     it('Deve buscar filmes com sucesso', () => {
-        cy.get('#search-input').type('The MatrixABCEF')
+        cy.get('#search-input').type('The Matrix')
         cy.get('#search-button').click()
         cy.get(':nth-child(1) > h3').should('contain', 'The Matrix')
     })
