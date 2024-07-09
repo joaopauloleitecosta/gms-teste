@@ -5,6 +5,10 @@ describe('Realizando testes no Golden Movie Studio', () => {
     cy.visit('/')
   })
 
+  afterEach(() => {
+    cy.screenshot()
+  })
+
   it('Deve fazer o cadastro de campos obrigatórios', () => {
     var email = `joao${Date.now()}@teste.com`
     cy.preencherCadastro('João', 'Paulo', email, '84991567321', 'Joao@123456')
